@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Hub</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+header {
+    background: #020617;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    align-items: center;
+}
+
+nav h1 {
+    color: #38bdf8;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav input {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 40px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Movie Cards */
+.movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+article {
+    min-width: 150px;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+article img {
+    width: 100%;
+}
+
+article p {
+    padding: 10px;
+}
+
+/* Genres */
+.genres {
+    display: flex;
+    gap: 10px;
+}
+
+.genre {
+    padding: 10px 15px;
+    background: #38bdf8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+<nav>
+    <h1>MovieHub</h1>
+
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="register.html">Sign up</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+
+    <input type="text" placeholder="Search">
+</nav>
+</header>
+
+<!-- MAIN CONTENT -->
+<main>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-content">
+        <h2>Featured Movie</h2>
+        <p>Watch the latest trending blockbuster now.</p>
+        <a href="watch.html"><button>Watch Now</button></a>
+    </div>
+</section>
+
+<!-- TRENDING -->
+<section>
+    <h2>Trending Movies</h2>
+
+    <div class="movies">
+
+        <article>
+            <img src="Peaky Blinders.jpeg">
+            <p>Peaky Blinders</p>
+        </article>
+
+        <article>
+            <img src="MDG.jpeg">
+            <p>Most Dangerous Game</p>
+        </article>
+
+        <article>
+            <img src="Jackal.jpeg">
+            <p>The day of the jackal</p>
+        </article>
+
+    </div>
+</section>
+
+<!-- LATEST -->
+<section>
+    <h2>Latest Releases</h2>
+
+    <div class="movies">
+
+        <article>
+            <img src="Bluff.jpeg">
+            <p>The Bluff</p>
+        </article>
+
+        <article>
+            <img src="Jackal.jpeg">
+            <p>The day of the jackal</p>
+        </article>
+
+    </div>
+</section>
+
+<!-- GENRES -->
+<section>
+    <h2>Genres</h2>
+
+    <div class="genres">
+        <div class="genre">Action</div>
+        <div class="genre">Comedy</div>
+        <div class="genre">Horror</div>
+        <div class="genre">Romance</div>
+    </div>
+</section>
+
+<!-- TOP RATED -->
+<section>
+    <h2>Top Rated</h2>
+
+    <div class="movies">
+
+        <article>
+            <img src="Mission_Impossible.jpeg">
+            <p>Mission: Impossible</p>
+        </article>
+
+        <article>
+            <img src="GodFather.jpeg">
+            <p> The Godfather</p>
+        </article>
+
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 MovieHub | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

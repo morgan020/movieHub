@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Hub</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #020617;
+}
+.navbar h1 {
+    color: #38bdf8;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+}
+.hero-content {
+    max-width: 500px;
+}
+.hero h2 {
+    font-size: 40px;
+}
+.hero button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sections */
+.section {
+    padding: 30px;
+}
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Movie Cards */
+.movies {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+.card {
+    min-width: 150px;
+    background: #1e293b;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+}
+.card p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Genres */
+.genres {
+    display: flex;
+    gap: 10px;
+}
+.genre {
+    padding: 10px 15px;
+    background: #38bdf8;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <h1>MovieHub</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">Series</a></li>
+        <li><a href="#">My List</a></li>
+    </ul>
+</div>
+
+<div class="hero">
+    <div class="hero-content">
+        <h2>Featured Movie</h2>
+        <p>Watch the latest trending blockbuster now.</p>
+        <button>Watch Now</button>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Trending Movies</h2>
+    <div class="movies">
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Movie 1</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Movie 2</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Movie 3</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Movie 4</p></div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Latest Releases</h2>
+    <div class="movies">
+        <div class="card"><img src="https://via.placeholder.com/150"><p>New 1</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>New 2</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>New 3</p></div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Genres</h2>
+    <div class="genres">
+        <div class="genre">Action</div>
+        <div class="genre">Comedy</div>
+        <div class="genre">Horror</div>
+        <div class="genre">Romance</div>
+    </div>
+</div>
+
+<div class="section">
+    <h2>Top Rated</h2>
+    <div class="movies">
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Top 1</p></div>
+        <div class="card"><img src="https://via.placeholder.com/150"><p>Top 2</p></div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>© 2026 MovieHub | All Rights Reserved</p>
+</div>
+
+</body>
+</html>
